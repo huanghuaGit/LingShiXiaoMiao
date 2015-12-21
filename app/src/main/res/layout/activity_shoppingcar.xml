@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:padding="8dp" >
+
+        <Button
+            android:id="@+id/btn_shoppingCar_back"
+            android:layout_width="7dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            style="@style/HeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/shoppingCar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@+id/top"
+        android:background="#eee"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_line"
+        android:background="#FFFFFF"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="center_vertical"
+            android:text="@string/cat_shoppingCar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:background="#eee" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eee"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_total_price"
+            android:layout_below="@+id/tv_total_price"
+            android:layout_marginTop="5dp"
+            android:text="不含运费"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/add_into_shopping_car_bg"
+            android:text="结算"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/btn_submit"
+            android:text="¥ 0.00"
+            android:textColor="#FA3636" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_total_price"
+            android:layout_alignBottom="@+id/tv_total_price"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_total_price"
+            android:text="合计 : "
+            android:textStyle="bold" />
+
+        <!--  
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/imageView_all_select"
+            android:text="全选" />
+
+        
+        <ImageView
+            android:id="@+id/imageView_all_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/textView5"
+            android:src="@drawable/btn_delete_normal" />
+        
+        -->
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_shopping_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/center"
+        android:layout_centerVertical="true" >
+    </ListView>
+
+</RelativeLayout>

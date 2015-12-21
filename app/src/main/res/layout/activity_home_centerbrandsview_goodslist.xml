@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image_brands_goods_list_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/default_class_brandteam_640_256" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8000"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_brands_goods_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/textView"
+            android:textColor="#FFFFFF" />
+
+        <com.qf.lingshixiaomaio.customView.TimeTextView
+            android:id="@+id/tv_brands_goods_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/textView"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/item_list_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#eee"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp" />
+
+  <com.qf.lingshixiaomaio.customView.LoadingView
+            android:id="@+id/view_salefragment_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.qf.lingshixiaomaio.customView.LoadingView>
+    </FrameLayout>
+</LinearLayout>

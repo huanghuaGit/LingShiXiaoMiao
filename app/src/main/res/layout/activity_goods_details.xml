@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/detail_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/tv_item_detail_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_btn_item_detial_back"
+            android:layout_centerHorizontal="true"
+            android:text="美味详情"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/image_btn_item_detial_back"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="#FFFFFF"
+            android:drawableStart="@drawable/btn_header_back_normal"
+          />
+
+        <Button
+            android:id="@+id/image_btn_item_detail_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_item_detail_top_title"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:drawableEnd="@drawable/btn_share_normal2x"
+            android:src="@drawable/btn_share_normal2x" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/detail_bottom"
+        android:layout_below="@+id/detail_top" >
+
+        <ScrollView
+            android:id="@+id/scrollView_item_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" >
+
+            <LinearLayout
+                android:id="@+id/ll_item_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <com.qf.lingshixiaomaio.customView.LoadingView
+            android:id="@+id/view_Item_Detail_loading1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.qf.lingshixiaomaio.customView.LoadingView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eee"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shopping_car_bg"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+             >
+
+            <Button
+                android:id="@+id/image_item_detail_shopping_car"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+                android:drawableStart="@drawable/btn_cart_normal" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_addTo_shopping_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/add_into_shopping_car_bg"
+            android:text="加入购物车"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

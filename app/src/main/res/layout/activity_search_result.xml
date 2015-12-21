@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 专题头部 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:padding="8dp" >
+
+        <Button
+            android:id="@+id/btn_search_result_back"
+            android:layout_width="7dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/tv_search_result_title"
+            style="@style/HeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="17dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cart_selector"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+    <!-- 专题头部 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <GridView
+            android:id="@+id/gv_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2" >
+        </GridView>
+
+        <com.qf.lingshixiaomaio.customView.LoadingView
+            android:id="@+id/view_search_result_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.qf.lingshixiaomaio.customView.LoadingView>
+    </FrameLayout>
+
+</LinearLayout>

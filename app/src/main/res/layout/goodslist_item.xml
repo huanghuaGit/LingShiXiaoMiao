@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="150dp"
+    android:layout_height="300dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/default_class_296_296" />
+
+    <TextView
+        android:id="@+id/tv_item_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:text="@string/textView"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/price_container"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_item_price_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/textView"
+            android:textColor="#F50000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_item_price_prime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_price_current"
+            android:layout_alignBottom="@+id/tv_item_price_current"
+            android:layout_toRightOf="@+id/tv_item_price_current"
+            android:text="@string/textView"
+            android:textColor="#969696"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_item_price_current"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="#F50000"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/tv_item_tag_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="包邮"
+                
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

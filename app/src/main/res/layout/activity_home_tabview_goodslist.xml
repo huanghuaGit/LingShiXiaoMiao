@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="15dp"
+        android:gravity="center|center_vertical"
+        android:background="#FFFFFF" >
+
+        <Button
+            android:id="@+id/btn_tabview_item_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_list_back"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:drawableRight="@drawable/btn_dropdown"
+            android:text="@string/item_list_title" />
+
+        <ImageView
+            android:id="@+id/item_list_back"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/btn_header_back_normal" />
+
+        <ImageView
+            android:id="@+id/item_list_shopping_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_cart_normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee" >
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/item_list_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#eee"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:verticalSpacing="10dp" />
+
+        <!-- 设置一个弹出布局 -->
+        <LinearLayout
+            android:id="@+id/home_tabview_goodlist_select_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <GridView
+                android:id="@+id/home_tabview_goodlist_select_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:numColumns="4"
+                android:padding="5dp" >
+            </GridView>
+        </LinearLayout>
+         <com.qf.lingshixiaomaio.customView.LoadingView
+            android:id="@+id/view_salefragment_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.qf.lingshixiaomaio.customView.LoadingView>
+    </FrameLayout>
+
+</LinearLayout>

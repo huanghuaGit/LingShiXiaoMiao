@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/home_rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <RadioButton
+            android:id="@+id/home_btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:button="@null"
+            android:drawableTop="@drawable/home_selector"
+            android:gravity="center"
+            android:text="@string/home_home"
+            android:textColor="@color/text_selector" />
+
+        <RadioButton
+            android:id="@+id/home_btn_sale"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:button="@null"
+            android:drawableTop="@drawable/sale_selector"
+            android:gravity="center"
+            android:text="@string/home_sale"
+            android:textColor="@color/text_selector" />
+
+        <RadioButton
+            android:id="@+id/home_btn_subject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:button="@null"
+            android:drawableTop="@drawable/subject_selector"
+            android:gravity="center"
+            android:text="@string/home_subject"
+            android:textColor="@color/text_selector" />
+
+        <RadioButton
+            android:id="@+id/home_btn_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:button="@null"
+            android:drawableTop="@drawable/mine_selector"
+            android:gravity="center"
+            android:text="@string/home_mine"
+            android:textColor="@color/text_selector" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/home_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_rg_tab"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF" >
+    </FrameLayout>
+
+</RelativeLayout>

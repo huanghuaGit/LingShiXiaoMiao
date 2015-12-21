@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="textView">textView</string>
+    <string name="app_name">零食喵喵</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="brands_title_big">品牌特卖</string>
+    <string name="brands_title_sml">折扣限时抢,每天10:00准时上新</string>
+    <string name="home_home">首页</string>
+    <string name="home_sale">特卖</string>
+    <string name="home_subject">专题</string>
+    <string name="home_mine">我的</string>
+    <string name="new_title_big">好吃到爆</string>
+    <string name="new_title_sml">畅销全网的万人迷</string>
+    <string name="item_list_title">商品列表</string>
+    <string name="item_detail_collect">收藏</string>
+    <string name="text">text</string>
+    <string name="supermark">超市价 :</string>
+    <string name="server_time">剩余时间</string>
+    <string name="info_title">美味信息</string>
+    <string name="guess_love_title">猜你喜欢</string>
+    <string name="more">查看更多评价</string>
+    <string name="action_title">商品促销与特殊优惠</string>
+    <string name="discount_title">满包邮</string>
+    <string name="discount_content">满68元包邮</string>
+    <string name="item_list">商品列表</string>
+    <string name="shoppingCar">购物车</string>
+    <string name="cat_shoppingCar">小喵购物车</string>
+    
+    <string name="network">你的网络开小差啦\n点击重新加载或检查网络</string>
+
+</resources>

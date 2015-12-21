@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:padding="8dp" >
+
+        <Button
+            android:id="@+id/btn_mycollection_back"
+            android:layout_width="7dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_selector" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_mycollection_goodses"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_lable1"
+                android:gravity="center"
+                android:text="商品"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_mycollection_subject"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_lable2"
+                android:gravity="center"
+                android:text="专题"
+                android:textColor="@color/maincolor" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_mycollection_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="编辑" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_mycollection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
